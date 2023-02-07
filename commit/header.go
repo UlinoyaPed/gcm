@@ -26,7 +26,9 @@ func Header() {
 		inputScope := &survey.Input{
 			Message: "输入Scpoe:",
 		}
-		survey.AskOne(inputScope, &Scope, survey.WithValidator(survey.Required))
+		survey.AskOne(inputScope, &Scope)
 	}
 	fmt.Println(Header + Scope)
+
+	var Subject string
 }
