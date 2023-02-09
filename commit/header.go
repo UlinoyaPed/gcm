@@ -47,7 +47,7 @@ func Header() {
 	// out, _ := cmd.CombinedOutput()
 	// fmt.Println(out)
 
-	ExecCommand("git commit", "-m"+FullCommitMessage)
+	ExecCommand("git", "commit", "-m "+FullCommitMessage)
 }
 
 func ExecCommand(name string, args ...string) {
