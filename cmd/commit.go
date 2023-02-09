@@ -19,7 +19,7 @@ var commitCmd = &cobra.Command{
 	Short: "Git提交",
 	Long:  `Git提交。`,
 	Run: func(cmd *cobra.Command, args []string) {
-		commit.Header()
+		commit.ExecCommand("git", "commit", "-m "+commit.Header())
 	},
 }
 
