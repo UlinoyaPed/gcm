@@ -35,6 +35,6 @@ func Header() string {
 	survey.AskOne(inputSubject, &Subject)
 
 	Header := fmt.Sprintf("%s(%s): %s", Type, Scope, Subject)
-	fmt.Println(Header)
+
 	return Header
 }

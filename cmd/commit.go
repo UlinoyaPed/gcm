@@ -5,11 +5,7 @@ Copyright © 2023 UlinoyaPed
 package cmd
 
 import (
-	//"fmt"
-
 	"github.com/UlinoyaPed/gcm/commit"
-
-	//"github.com/AlecAivazis/survey/v2"
 	"github.com/spf13/cobra"
 )
 
@@ -19,7 +15,7 @@ var commitCmd = &cobra.Command{
 	Short: "Git提交",
 	Long:  `Git提交。`,
 	Run: func(cmd *cobra.Command, args []string) {
-		commit.ExecCommand("git", "commit", "-m "+commit.Header())
+		commit.ExecCommand("git", "commit", "-am "+commit.Header())
 	},
 }
 
